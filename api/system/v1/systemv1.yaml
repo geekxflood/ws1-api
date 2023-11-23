@@ -166,55 +166,55 @@ paths:
           description: The First name to search for.
           required: false
           type: string
-          default: ''
+
         - name: lastname
           in: query
           description: The Last name to search for.
           required: false
           type: string
-          default: ''
+
         - name: email
           in: query
           description: The Email Address to search for.
           required: false
           type: string
-          default: ''
+
         - name: organizationgroupid
           in: query
           description: The Organization Group Id to search for.
           required: false
           type: integer
-          default: ''
+
         - name: role
           in: query
           description: The Role name to search for.
           required: false
           type: string
-          default: ''
+
         - name: username
           in: query
           description: The User name to search for.
           required: false
           type: string
-          default: ''
+
         - name: orderby
           in: query
           description: Order the results by this attribute.
           required: false
           type: string
-          default: ''
+
         - name: page
           in: query
           description: The specific page number to get.
           required: false
           type: integer
-          default: ''
+
         - name: pagesize
           in: query
           description: Maximum records per page.
           required: false
           type: integer
-          default: ''
+
         - name: sortorder
           in: query
           description: >-
@@ -222,7 +222,7 @@ paths:
             this attribute is not specified.
           required: false
           type: string
-          default: ''
+
         - name: status
           in: query
           description: >-
@@ -230,7 +230,7 @@ paths:
             all, if this attribute is not specified.
           required: false
           type: string
-          default: ''
+
       responses:
         '200':
           description: OK
@@ -641,31 +641,26 @@ paths:
           description: The unique id of the organization group.(Required)
           required: true
           type: string
-          default: ''
         - name: page_number
           in: query
           description: Page number.
           required: false
           type: integer
-          default: ''
         - name: page_size
           in: query
           description: Page size. Default/Maximum is 500.
           required: false
           type: integer
-          default: ''
         - name: status_filter
           in: query
           description: Filters records based on the Job Status. Valid Status 1-10.
           required: false
           type: integer
-          default: ''
         - name: search_text
           in: query
           description: Filters records based on the search text.
           required: false
           type: string
-          default: ''
         - name: sort_column
           in: query
           description: Column based on which we can provide the sorting. Default JOB_ID.
@@ -787,19 +782,16 @@ paths:
           description: Page number.
           required: false
           type: integer
-          default: ''
         - name: page_size
           in: query
           description: Page size. Default/Maximum is 500.
           required: false
           type: integer
-          default: ''
         - name: search_text
           in: query
           description: Filters records based on the search text.
           required: false
           type: string
-          default: ''
         - name: sort_column
           in: query
           description: Column based on which we can provide the sorting. Default JOB_ID.
@@ -866,7 +858,6 @@ paths:
           description: The approval action.(Required)
           required: true
           type: string
-          default: ''
       responses:
         '202':
           description: Accepted
@@ -1003,7 +994,6 @@ paths:
           description: Option to force generate APNs Cert Request.
           required: false
           type: boolean
-          default: ''
       responses:
         '200':
           description: OK
@@ -1245,13 +1235,13 @@ paths:
           description: Page number.
           required: false
           type: integer
-          default: ''
+
         - name: page_size
           in: query
           description: Page size. Default/Maximum is 500.
           required: false
           type: integer
-          default: ''
+
         - name: search_text
           in: query
           description: >-
@@ -1259,13 +1249,13 @@ paths:
             128 character.
           required: false
           type: string
-          default: ''
+
         - name: sort_column
           in: query
           description: Column based on which we can provide the sorting. Default JOB_ID.
           required: false
           type: string
-          default: ''
+
         - name: sort_order
           in: query
           description: The order based which on we can sort. Default value is ASC.
@@ -1277,7 +1267,7 @@ paths:
           description: Column based on which we can filter the users.
           required: false
           type: string
-          default: ''
+
       responses:
         '200':
           description: Ok
@@ -1653,25 +1643,24 @@ paths:
           description: Organization Group Identifer.
           required: false
           type: integer
-          default: ''
+
         - name: name
           in: query
           description: Custom Attribute Name.
           required: false
           type: string
-          default: ''
+
         - name: page
           in: query
           description: Specific page number to get. 0 based index.
           required: false
           type: integer
-          default: ''
+
         - name: pagesize
           in: query
           description: Maximumm records per page. Default 500.
           required: false
           type: integer
-          default: ''
       responses:
         '200':
           description: OK
@@ -1982,7 +1971,7 @@ paths:
           in: query
           description: Holds request entity coming through call pipeline.
           required: true
-          type: object
+          type: string
         - name: bulkInput
           in: body
           description: List of devices identified by Asset number/Udid/SerialNumber.
@@ -1996,13 +1985,12 @@ paths:
             Serialnumber, AssetNumber](Required).
           required: true
           type: string
-          default: ''
         - name: username
           in: query
           description: User name with which the device is enrolled.
           required: false
           type: string
-          default: ''
+
       responses:
         '200':
           description: OK
@@ -2041,7 +2029,7 @@ paths:
             be searched.
           required: false
           type: string
-          default: ''
+
         - name: userid
           in: query
           description: >-
@@ -2049,7 +2037,7 @@ paths:
             to be searched.
           required: false
           type: integer
-          default: ''
+
         - name: organizationgroupid
           in: query
           description: >-
@@ -2057,7 +2045,7 @@ paths:
             to be searched.
           required: false
           type: integer
-          default: ''
+
         - name: organizationgroup
           in: query
           description: >-
@@ -2065,7 +2053,7 @@ paths:
             searched.
           required: false
           type: string
-          default: ''
+
         - name: serialnumber
           in: query
           description: >-
@@ -2073,7 +2061,7 @@ paths:
             Eg:RZ1G124JZ6W.
           required: false
           type: string
-          default: ''
+
         - name: assetnumber
           in: query
           description: >-
@@ -2081,7 +2069,7 @@ paths:
             Eg:ea856771ba6277bfca16528a79c5ce1f.
           required: false
           type: string
-          default: ''
+
         - name: enrollmentstatusid
           in: query
           description: >-
@@ -2089,7 +2077,7 @@ paths:
             retrieved.
           required: false
           type: integer
-          default: ''
+
         - name: compliancestatusid
           in: query
           description: >-
@@ -2097,7 +2085,7 @@ paths:
             retrieved.
           required: false
           type: integer
-          default: ''
+
       responses:
         '200':
           description: OK
@@ -2190,7 +2178,7 @@ paths:
             retrieved.
           required: false
           type: integer
-          default: ''
+
         - name: organizationgroup
           in: query
           description: >-
@@ -2198,13 +2186,13 @@ paths:
             will be retrieved.
           required: false
           type: string
-          default: ''
+
         - name: platform
           in: query
           description: Platform filter for the device details to be retrieved.
           required: false
           type: string
-          default: ''
+
         - name: customattributes
           in: query
           description: >-
@@ -2212,13 +2200,13 @@ paths:
             values should be returned.
           required: false
           type: string
-          default: ''
+
         - name: serialnumber
           in: query
           description: Device serialnumber for which values should be returned.
           required: false
           type: string
-          default: ''
+
         - name: seensince
           in: query
           description: >-
@@ -2227,7 +2215,7 @@ paths:
           required: false
           type: string
           format: date-time
-          default: ''
+
         - name: seentill
           in: query
           description: >-
@@ -2236,7 +2224,7 @@ paths:
           required: false
           type: string
           format: date-time
-          default: ''
+
         - name: enrolledsince
           in: query
           description: >-
@@ -2245,7 +2233,7 @@ paths:
           required: false
           type: string
           format: date-time
-          default: ''
+
         - name: enrolledtill
           in: query
           description: >-
@@ -2254,7 +2242,7 @@ paths:
           required: false
           type: string
           format: date-time
-          default: ''
+
       responses:
         '200':
           description: OK
@@ -2300,7 +2288,7 @@ paths:
             retrieved.
           required: false
           type: integer
-          default: ''
+
         - name: organizationgroup
           in: query
           description: >-
@@ -2308,13 +2296,13 @@ paths:
             will be retrieved.
           required: false
           type: string
-          default: ''
+
         - name: platform
           in: query
           description: Platform filter for the device details to be retrieved.
           required: false
           type: string
-          default: ''
+
         - name: customattributes
           in: query
           description: >-
@@ -2322,7 +2310,7 @@ paths:
             values should be returned.
           required: false
           type: string
-          default: ''
+
         - name: assetnumber
           in: query
           description: >-
@@ -2330,7 +2318,7 @@ paths:
             ea856771ba6277bfca16528a79c5ce1f.
           required: false
           type: string
-          default: ''
+
         - name: seensince
           in: query
           description: >-
@@ -2339,7 +2327,7 @@ paths:
           required: false
           type: string
           format: date-time
-          default: ''
+
         - name: seentill
           in: query
           description: >-
@@ -2348,7 +2336,7 @@ paths:
           required: false
           type: string
           format: date-time
-          default: ''
+
       responses:
         '200':
           description: OK
@@ -2395,29 +2383,29 @@ paths:
             filtered by.
           required: false
           type: string
-          default: ''
+
         - name: start_date
           in: query
           description: The start of the date range which the results will be filtered by.
           required: false
           type: string
           format: date-time
-          default: ''
+
         - name: end_date
           in: query
           description: The end of the date range which the results will be filtered by.
           required: false
           type: string
           format: date-time
-          default: ''
+
         - name: wipe_type
           in: query
           description: >-
             The wipe action type which the results will be filtered by.
             Supported values are DEVICE_WIPE, ENTERPRISE_WIPE.
           required: false
-          type: ''
-          default: ''
+          type: string
+
         - name: wipe_source
           in: query
           description: >-
@@ -2430,16 +2418,16 @@ paths:
             BULK_ADMIN_API_ACTION_DELETE_DEVICE,
             SINGLE_ADMIN_API_ACTION_DELETE_DEVICE.
           required: false
-          type: ''
-          default: ''
+          type: string
+
         - name: wipe_status
           in: query
           description: >-
             The status of the wipe action by which the results will be filtered.
             Supported values are APPROVED, HELD, QUEUED, ABORTED.
           required: false
-          type: ''
-          default: ''
+          type: string
+
         - name: ownership
           in: query
           description: >-
@@ -2447,20 +2435,20 @@ paths:
             be filtered. Supported values are UNKNOWN, CORPORATE_DEDICATED,
             EMPLOYEE_OWNED, CORPORATE_SHARED.
           required: false
-          type: ''
-          default: ''
+          type: string
+
         - name: page
           in: query
           description: The page number being requested.
           required: false
           type: integer
-          default: ''
+
         - name: page_size
           in: query
           description: 'The maximum records per page. Default 50, Maximum page size is 500.'
           required: false
           type: integer
-          default: ''
+
         - name: sort_column
           in: query
           description: >-
@@ -2468,16 +2456,16 @@ paths:
             values are DATE, DEVICE_FRIENDLY_NAME, USER, ORGANIZATION_GROUP.
             Default is DATE
           required: false
-          type: ''
-          default: ''
+          type: string
+
         - name: sort_direction
           in: query
           description: >-
             The sort order by direction. Supported values are ASC, DESC. Default
             ASC.
           required: false
-          type: ''
-          default: ''
+          type: string
+          default: 'ASC'
       responses:
         '200':
           description: OK
@@ -2538,8 +2526,7 @@ paths:
             Specifies what action should be taken. Suppored actions are APPROVE,
             REJECT.(Required)
           required: true
-          type: ''
-          default: ''
+          type: string
       responses:
         '202':
           description: Accepted
@@ -3112,32 +3099,9 @@ paths:
           required: false
           schema:
             $ref: '#/definitions/EventNotificationModel'
-      responses: {}
-      security:
-        - BasicAuth: []
-        - CmsAuth: []
-        - ApiKeyAuth: []
-  /eventnotifications/V1/eventnotifications:
-    post:
-      tags:
-        - EventNotificationsV1
-      summary: Creates a new Event Notification rule with events to subscribe to.
-      description: v1.
-      operationId: EventNotificationsV1_CreateEventNotificationRule
-      consumes:
-        - application/json
-        - application/xml
-      produces:
-        - application/json;version=1
-        - application/xml;version=1
-      parameters:
-        - name: model
-          in: body
-          description: The Event Notification Model.
-          required: false
-          schema:
-            $ref: '#/definitions/EventNotificationModel'
-      responses: {}
+      responses:
+        '200':
+          description: OK
       security:
         - BasicAuth: []
         - CmsAuth: []
@@ -3163,7 +3127,9 @@ paths:
           required: true
           type: integer
           format: int32
-      responses: {}
+      responses:
+        '200':
+          description: OK
       security:
         - BasicAuth: []
         - CmsAuth: []
@@ -3194,7 +3160,9 @@ paths:
           required: false
           schema:
             $ref: '#/definitions/EventNotificationModel'
-      responses: {}
+      responses:
+        '200':
+          description: OK
       security:
         - BasicAuth: []
         - CmsAuth: []
@@ -3220,90 +3188,9 @@ paths:
           required: true
           type: integer
           format: int32
-      responses: {}
-      security:
-        - BasicAuth: []
-        - CmsAuth: []
-        - ApiKeyAuth: []
-  '/eventnotifications/V1/eventnotifications/{id}':
-    get:
-      tags:
-        - EventNotificationsV1
-      summary: >-
-        Retrieves details of an Event Notification Rule identified by
-        EventNotification Id.
-      operationId: EventNotificationsV1_GetEventNotificationById
-      consumes:
-        - application/json
-        - application/xml
-      produces:
-        - application/json;version=1
-        - application/xml;version=1
-      parameters:
-        - name: id
-          in: path
-          description: The Event Notification Id.
-          required: true
-          type: integer
-          format: int32
-      responses: {}
-      security:
-        - BasicAuth: []
-        - CmsAuth: []
-        - ApiKeyAuth: []
-    put:
-      tags:
-        - EventNotificationsV1
-      summary: >-
-        Updates an Event Notification Rule identified by the Event Notification
-        Id.
-      operationId: EventNotificationsV1_UpdateEventNotificationRule
-      consumes:
-        - application/json
-        - application/xml
-      produces:
-        - application/json;version=1
-        - application/xml;version=1
-      parameters:
-        - name: id
-          in: path
-          description: The Event Notification Id.
-          required: true
-          type: integer
-          format: int32
-        - name: model
-          in: body
-          description: The Event Notification Model.
-          required: false
-          schema:
-            $ref: '#/definitions/EventNotificationModel'
-      responses: {}
-      security:
-        - BasicAuth: []
-        - CmsAuth: []
-        - ApiKeyAuth: []
-    delete:
-      tags:
-        - EventNotificationsV1
-      summary: >-
-        Deletes an Event Notification Rule identified by the Event Notification
-        Id.
-      description: v1.
-      operationId: EventNotificationsV1_DeleteEventNotificationRule
-      consumes:
-        - application/json
-        - application/xml
-      produces:
-        - application/json;version=1
-        - application/xml;version=1
-      parameters:
-        - name: id
-          in: path
-          description: The Event Notification Id.
-          required: true
-          type: integer
-          format: int32
-      responses: {}
+      responses:
+        '200':
+          description: OK
       security:
         - BasicAuth: []
         - CmsAuth: []
@@ -3326,19 +3213,19 @@ paths:
           description: The Target Name.
           required: false
           type: string
-          default: ''
+
         - name: organizationgroupid
           in: query
           description: The OrganizationGroup Identifier.
           required: false
           type: string
-          default: ''
+
         - name: status
           in: query
           description: 'The Event Notification status [Active, Inactive].'
           required: false
           type: string
-          default: ''
+
         - name: orderby
           in: query
           description: >-
@@ -3346,88 +3233,28 @@ paths:
             FormatType, UserName, Active].
           required: false
           type: string
-          default: ''
+
         - name: sortorder
           in: query
           description: Sorting order. Values ASC or DESC. Defaults to ASC..
           required: false
           type: string
-          default: ''
+
         - name: page
           in: query
           description: Page number.
           required: false
           type: integer
-          default: ''
+
         - name: pagesize
           in: query
           description: Number of Records per page.
           required: false
           type: integer
-          default: ''
-      responses: {}
-      security:
-        - BasicAuth: []
-        - CmsAuth: []
-        - ApiKeyAuth: []
-  /eventnotifications/V1/eventnotifications/search:
-    get:
-      tags:
-        - EventNotificationsV1
-      summary: Searches Event Notifications based on the query information provided.
-      operationId: EventNotificationsV1_Search
-      consumes:
-        - application/json
-        - application/xml
-      produces:
-        - application/json;version=1
-        - application/xml;version=1
-      parameters:
-        - name: targetname
-          in: query
-          description: The Target Name.
-          required: false
-          type: string
-          default: ''
-        - name: organizationgroupid
-          in: query
-          description: The OrganizationGroup Identifier.
-          required: false
-          type: string
-          default: ''
-        - name: status
-          in: query
-          description: 'The Event Notification status [Active, Inactive].'
-          required: false
-          type: string
-          default: ''
-        - name: orderby
-          in: query
-          description: >-
-            Sorts the response based on this attribute [TargetName, TargetUrl,
-            FormatType, UserName, Active].
-          required: false
-          type: string
-          default: ''
-        - name: sortorder
-          in: query
-          description: Sorting order. Values ASC or DESC. Defaults to ASC..
-          required: false
-          type: string
-          default: ''
-        - name: page
-          in: query
-          description: Page number.
-          required: false
-          type: integer
-          default: ''
-        - name: pagesize
-          in: query
-          description: Number of Records per page.
-          required: false
-          type: integer
-          default: ''
-      responses: {}
+
+      responses:
+        '200':
+          description: OK
       security:
         - BasicAuth: []
         - CmsAuth: []
@@ -3452,7 +3279,9 @@ paths:
           required: false
           schema:
             $ref: '#/definitions/EventNotificationModel'
-      responses: {}
+      responses:
+        '200':
+          description: OK
       security:
         - BasicAuth: []
         - CmsAuth: []
@@ -3478,7 +3307,9 @@ paths:
           required: true
           type: string
           format: uuid
-      responses: {}
+      responses:
+        '200':
+          description: OK
       security:
         - BasicAuth: []
         - CmsAuth: []
@@ -3509,7 +3340,9 @@ paths:
           required: false
           schema:
             $ref: '#/definitions/EventNotificationModel'
-      responses: {}
+      responses:
+        '200':
+          description: OK
       security:
         - BasicAuth: []
         - CmsAuth: []
@@ -3535,7 +3368,9 @@ paths:
           required: true
           type: string
           format: uuid
-      responses: {}
+      responses:
+        '200':
+          description: OK
       security:
         - BasicAuth: []
         - CmsAuth: []
@@ -3560,19 +3395,19 @@ paths:
           description: The Target Name.
           required: false
           type: string
-          default: ''
+
         - name: organizationgroupuuid
           in: query
           description: The OrganizationGroup Identifier.
           required: false
           type: string
-          default: ''
+
         - name: status
           in: query
           description: 'The Event Notification status [Active, Inactive].'
           required: false
           type: string
-          default: ''
+
         - name: orderby
           in: query
           description: >-
@@ -3580,26 +3415,28 @@ paths:
             FormatType, UserName, Active].
           required: false
           type: string
-          default: ''
+
         - name: sortorder
           in: query
           description: Sorting order. Values ASC or DESC. Defaults to ASC..
           required: false
           type: string
-          default: ''
+
         - name: page
           in: query
           description: Page number.
           required: false
           type: integer
-          default: ''
+
         - name: pagesize
           in: query
           description: Number of Records per page.
           required: false
           type: integer
-          default: ''
-      responses: {}
+
+      responses:
+        '200':
+          description: OK
       security:
         - BasicAuth: []
         - CmsAuth: []
@@ -3624,20 +3461,22 @@ paths:
           description: The OrganizationGroup Identifier.
           required: false
           type: string
-          default: ''
+
         - name: page
           in: query
           description: Page number.
           required: false
           type: integer
-          default: ''
+
         - name: pagesize
           in: query
           description: Number of Records per page.
           required: false
           type: integer
-          default: ''
-      responses: {}
+
+      responses:
+        '200':
+          description: OK
       security:
         - BasicAuth: []
         - CmsAuth: []
@@ -3665,13 +3504,12 @@ paths:
           description: The text to search for in the name and description for exports.
           required: false
           type: string
-          default: ''
+
         - name: export_type
           in: query
           description: The export type which the results will be filtered by.(Required)
           required: true
-          type: ''
-          default: ''
+          type: string
         - name: created_start_date
           in: query
           description: >-
@@ -3680,7 +3518,7 @@ paths:
           required: false
           type: string
           format: date-time
-          default: ''
+
         - name: created_end_date
           in: query
           description: >-
@@ -3689,33 +3527,33 @@ paths:
           required: false
           type: string
           format: date-time
-          default: ''
+
         - name: sort_column
           in: query
           description: >-
             Order the results by this attribute, default value can be Time
             Exported.
           required: false
-          type: ''
-          default: ''
+          type: string
+
         - name: page
           in: query
           description: The specific page number to get.
           required: false
           type: integer
-          default: ''
+
         - name: page_size
           in: query
           description: 'Maximum records per page, default value is 20'
           required: false
           type: integer
-          default: ''
+
         - name: sort_order
           in: query
           description: The sort order by direction.
           required: false
-          type: ''
-          default: ''
+          type: string
+
       responses:
         '200':
           description: OK
@@ -4076,7 +3914,7 @@ paths:
           description: The language code (Default en-US).
           required: false
           type: string
-          default: ''
+
       responses:
         '200':
           description: OK
@@ -4157,7 +3995,7 @@ paths:
             value is 0.
           required: false
           type: integer
-          default: ''
+
         - name: pageSize
           in: query
           description: >-
@@ -4165,7 +4003,7 @@ paths:
             0.
           required: false
           type: integer
-          default: ''
+
         - name: active
           in: query
           description: >-
@@ -4173,7 +4011,7 @@ paths:
             be true or false. Default value is true.
           required: false
           type: boolean
-          default: ''
+
         - name: cultureCode
           in: query
           description: >-
@@ -4182,7 +4020,7 @@ paths:
             core user.
           required: false
           type: string
-          default: ''
+
       responses:
         '200':
           description: OK
@@ -4408,8 +4246,7 @@ paths:
             The platform of device for which sample rates are
             requested.(Required)
           required: true
-          type: ''
-          default: ''
+          type: string
       responses:
         '200':
           description: OK
@@ -4659,13 +4496,13 @@ paths:
           description: 'The OrganizationGroup name, such as "Global".'
           required: false
           type: string
-          default: ''
+
         - name: type
           in: query
           description: 'The OrganizationGroup type. (eg. "Container","Customer","Partner").'
           required: false
           type: string
-          default: ''
+
         - name: groupid
           in: query
           description: >-
@@ -4673,7 +4510,7 @@ paths:
             for.[Exact match is performed for this attribute].
           required: false
           type: string
-          default: ''
+
         - name: orderby
           in: query
           description: >-
@@ -4681,19 +4518,19 @@ paths:
             Id/Name/GroupId/LocationGroupType].
           required: false
           type: string
-          default: ''
+
         - name: page
           in: query
           description: Specific page number to get. 0 based index.
           required: false
           type: integer
-          default: ''
+
         - name: pagesize
           in: query
           description: Maximum records per page. Default 500.
           required: false
           type: integer
-          default: ''
+
         - name: sortorder
           in: query
           description: >-
@@ -4701,7 +4538,7 @@ paths:
             this attribute is not specified.
           required: false
           type: string
-          default: ''
+
       responses:
         '200':
           description: OK
@@ -4738,33 +4575,33 @@ paths:
             sent.
           required: false
           type: integer
-          default: ''
+
         - name: seensince
           in: query
           description: "Filter devices such that devices with last seen after this date will be returned. Supported format:\r\n            \"yyyy/MM/dd\", \"yyyy-MM-dd\", \"MM/dd/yyyy\", \"MM-dd-yyyy\", \"yyyy/MM/dd HH:mm:ss.fff\", \"yyyy-MM-dd HH:mm:ss.fff\", \"MM/dd/yyyy HH:mm:ss.fff\", \"MM-dd-yyyy HH:mm:ss.fff\", \"yyyy/MM/ddTHH:mm:ss.fff\", \"yyyy-MM-ddTHH:mm:ss.fff\", \"MM/dd/yyyyTHH:mm:ss.fff\", \"MM-dd-yyyyTHH:mm:ss.fff\", \"yyyy-MM-dd HH-mm-ss-tt\", \"yyyy-MM-ddTHH-mm-ss-tt\".\r\n            "
           required: false
           type: string
           format: date-time
-          default: ''
+
         - name: seentill
           in: query
           description: "Filter devices such that devices with last seen till this date will be returned\r\n            Supported format:\"yyyy/MM/dd\", \"yyyy-MM-dd\", \"MM/dd/yyyy\", \"MM-dd-yyyy\", \"yyyy/MM/dd HH:mm:ss.fff\", \"yyyy-MM-dd HH:mm:ss.fff\", \"MM/dd/yyyy HH:mm:ss.fff\", \"MM-dd-yyyy HH:mm:ss.fff\", \"yyyy/MM/ddTHH:mm:ss.fff\", \"yyyy-MM-ddTHH:mm:ss.fff\", \"MM/dd/yyyyTHH:mm:ss.fff\", \"MM-dd-yyyyTHH:mm:ss.fff\", \"yyyy-MM-dd HH-mm-ss-tt\", \"yyyy-MM-ddTHH-mm-ss-tt\".\r\n            "
           required: false
           type: string
           format: date-time
-          default: ''
+
         - name: page
           in: query
           description: Specific page number to get. 0 based index.
           required: false
           type: integer
-          default: ''
+
         - name: pagesize
           in: query
           description: Maximum records per page. Default 500.
           required: false
           type: integer
-          default: ''
+
       responses:
         '200':
           description: OK
@@ -4807,7 +4644,7 @@ paths:
           description: Platform name.
           required: false
           type: string
-          default: ''
+
       responses:
         '200':
           description: OK
@@ -4882,19 +4719,19 @@ paths:
             applications
           required: false
           type: string
-          default: ''
+
         - name: pagenumber
           in: query
           description: Specific page number to get. Default value is 0
           required: false
           type: integer
-          default: ''
+
         - name: pagesize
           in: query
           description: Maximumm records per page. Default value is 20
           required: false
           type: integer
-          default: ''
+
       responses:
         '200':
           description: OK
@@ -4929,19 +4766,19 @@ paths:
             searching profiles
           required: false
           type: string
-          default: ''
+
         - name: pagenumber
           in: query
           description: Specific page number to get. Default value is 0
           required: false
           type: integer
-          default: ''
+
         - name: pagesize
           in: query
           description: Maximumm records per page. Default value is 20
           required: false
           type: integer
-          default: ''
+
       responses:
         '200':
           description: OK
@@ -4984,7 +4821,6 @@ paths:
             Profile(Required)
           required: true
           type: string
-          default: ''
       responses:
         '200':
           description: OK
@@ -5596,7 +5432,9 @@ paths:
           required: false
           schema:
             $ref: '#/definitions/Tag'
-      responses: {}
+      responses:
+        '200':
+          description: OK
       security:
         - BasicAuth: []
         - CmsAuth: []
@@ -5633,46 +5471,9 @@ paths:
           required: false
           schema:
             $ref: '#/definitions/Tag'
-      responses: {}
-      security:
-        - BasicAuth: []
-        - CmsAuth: []
-        - ApiKeyAuth: []
-  '/users/{id}':
-    get:
-      tags:
-        - User
-      summary: Get the enrollment user.
-      description: "Get the enrollment user information by enrollment user id.\r\nThe enrollment user information will be present once the call is complete.\r\nWe have introduced v2 for this API, which includes enhancements, and recommend using v2 going forward."
-      operationId: User_Get
-      consumes:
-        - application/json
-        - application/xml
-      produces:
-        - application/json;version=1
-        - application/xml;version=1
-      parameters:
-        - name: id
-          in: path
-          description: The enrollment user id (Required).
-          required: true
-          type: integer
-          format: int32
       responses:
         '200':
           description: OK
-          schema:
-            $ref: '#/definitions/User '
-        '403':
-          description: >-
-            Forbidden 1.{1011: User doesn't have sufficient permissions to
-            perform this operation.}
-          schema:
-            $ref: '#/definitions/BaseExceptionModel'
-        '404':
-          description: 'Not Found 1.{404: User not found}'
-          schema:
-            $ref: '#/definitions/BaseExceptionModel'
       security:
         - BasicAuth: []
         - CmsAuth: []
@@ -5698,7 +5499,7 @@ paths:
             attributes.
           required: false
           type: boolean
-          default: ''
+
       responses:
         '200':
           description: OK
@@ -5956,7 +5757,6 @@ paths:
           description: The new enrollment user organization group id (Required).
           required: true
           type: integer
-          default: ''
       responses:
         '200':
           description: OK
@@ -5996,61 +5796,61 @@ paths:
           description: The enrollment user first name to search for.
           required: false
           type: string
-          default: ''
+
         - name: lastname
           in: query
           description: The enrollment user last name to search for.
           required: false
           type: string
-          default: ''
+
         - name: email
           in: query
           description: The enrollment user email address to search for.
           required: false
           type: string
-          default: ''
+
         - name: locationgroupId
           in: query
           description: The enrollment user location group id to search for.
           required: false
           type: integer
-          default: ''
+
         - name: role
           in: query
           description: The enrollment user role to search for.
           required: false
           type: string
-          default: ''
+
         - name: username
           in: query
           description: The enrollment user username to search for.
           required: false
           type: string
-          default: ''
+
         - name: page
           in: query
           description: Specific page number to get. 0 based index.
           required: false
           type: integer
-          default: ''
+
         - name: pagesize
           in: query
           description: Maximum records per page. Default 500.
           required: false
           type: integer
-          default: ''
+
         - name: orderby
           in: query
           description: The attribute sort based on.
           required: false
           type: string
-          default: ''
+
         - name: sortorder
           in: query
           description: 'The sort order, ASC for ascending and DESC for descending.'
           required: false
           type: string
-          default: ''
+
         - name: status
           in: query
           description: >-
@@ -6058,7 +5858,7 @@ paths:
             all, if this attribute is not specified.
           required: false
           type: string
-          default: ''
+
       responses:
         '200':
           description: OK
@@ -6397,13 +6197,13 @@ paths:
           description: Specific page number to get. 0 based index.
           required: false
           type: integer
-          default: ''
+
         - name: pagesize
           in: query
           description: Maximum records per page. Default 500.
           required: false
           type: integer
-          default: ''
+
       responses:
         '204':
           description: No Content
@@ -6487,25 +6287,25 @@ paths:
           description: Name of User Group (Required).
           required: true
           type: string
-          default: ''
+
         - name: organizationgroupid
           in: query
           description: Organization Group Identifier.
           required: false
           type: integer
-          default: ''
+
         - name: page
           in: query
           description: Specific page number to get. 0 based index.
           required: false
           type: integer
-          default: ''
+
         - name: pagesize
           in: query
           description: Maximum records per page. Default 500.
           required: false
           type: integer
-          default: ''
+
       responses:
         '204':
           description: No Content
@@ -6539,43 +6339,43 @@ paths:
           description: Name of the group.
           required: false
           type: string
-          default: ''
+
         - name: organizationgroupid
           in: query
           description: Organization Group Identifier.
           required: false
           type: integer
-          default: ''
+
         - name: usergrouptype
           in: query
           description: User Group Type.
           required: false
           type: string
-          default: ''
+
         - name: syncstatus
           in: query
           description: Sync Status of the User Group.
           required: false
           type: string
-          default: ''
+
         - name: mergestatus
           in: query
           description: Merge Status of the User Group.
           required: false
           type: string
-          default: ''
+
         - name: page
           in: query
           description: It specifies the page number.
           required: false
           type: integer
-          default: ''
+
         - name: pagesize
           in: query
           description: Maximum records per page.
           required: false
           type: integer
-          default: ''
+
       responses:
         '200':
           description: OK
@@ -6619,44 +6419,43 @@ paths:
             Uuid of the Organization group to fetch the user batches
             for.(Required)
           required: true
-          type: uuid
-          default: ''
+          type: string
         - name: batch_name
           in: query
           description: Filter records based on batch name.
           required: false
           type: string
-          default: ''
+
         - name: batch_description
           in: query
           description: Filter records based on batch description.
           required: false
           type: string
-          default: ''
+
         - name: page
           in: query
           description: Specific page number to get. 0 based index.
           required: false
           type: integer
-          default: ''
+
         - name: page_size
           in: query
           description: Maximum records per page. Default 500.
           required: false
           type: integer
-          default: ''
+
         - name: sort_column
           in: query
           description: Column based on which we can provide the sorting.
           required: false
-          type: ''
-          default: ''
+          type: string
+
         - name: sort_order
           in: query
           description: The order based which on we can sort. Default value is ASC.
           required: false
-          type: ''
-          default: ''
+          type: string
+          default: 'ASC'
       responses:
         '200':
           description: OK
@@ -6715,8 +6514,8 @@ paths:
           in: query
           description: Type of the batch.
           required: false
-          type: ''
-          default: ''
+          type: string
+
       responses:
         '201':
           description: Created
@@ -6814,37 +6613,37 @@ paths:
           description: Filter records based on row number.
           required: false
           type: string
-          default: ''
+
         - name: description
           in: query
           description: Filter records based on description.
           required: false
           type: string
-          default: ''
+
         - name: page
           in: query
           description: Specific page number to get. 0 based index.
           required: false
           type: integer
-          default: ''
+
         - name: page_size
           in: query
           description: Maximum records per page. Default 500.
           required: false
           type: integer
-          default: ''
+
         - name: sort_column
           in: query
           description: Column based on which we can provide the sorting.
           required: false
-          type: ''
-          default: ''
+          type: string
+
         - name: sort_order
           in: query
           description: The order based which on we can sort. Default value is ASC.
           required: false
-          type: ''
-          default: ''
+          type: string
+          default: 'ASC'
       responses:
         '200':
           description: OK
