@@ -183,55 +183,55 @@ paths:
           description: The First name to search for.
           required: false
           type: string
-          default: ''
+          
         - name: lastname
           in: query
           description: The Last name to search for.
           required: false
           type: string
-          default: ''
+          
         - name: email
           in: query
           description: The Email Address to search for.
           required: false
           type: string
-          default: ''
+          
         - name: organizationgroupid
           in: query
           description: The Organization Group Id to search for.
           required: false
           type: integer
-          default: ''
+          
         - name: role
           in: query
           description: The Role name to search for.
           required: false
           type: string
-          default: ''
+          
         - name: username
           in: query
           description: The User name to search for.
           required: false
           type: string
-          default: ''
+          
         - name: orderby
           in: query
           description: Order the results by this attribute.
           required: false
           type: string
-          default: ''
+          
         - name: page
           in: query
           description: The specific page number to get.
           required: false
           type: integer
-          default: ''
+          
         - name: pagesize
           in: query
           description: Maximum records per page.
           required: false
           type: integer
-          default: ''
+          
         - name: sortorder
           in: query
           description: >-
@@ -239,7 +239,7 @@ paths:
             this attribute is not specified.
           required: false
           type: string
-          default: ''
+          
         - name: status
           in: query
           description: >-
@@ -247,7 +247,7 @@ paths:
             all, if this attribute is not specified.
           required: false
           type: string
-          default: ''
+          
       responses:
         '200':
           description: OK
@@ -437,19 +437,19 @@ paths:
           description: Page number.
           required: false
           type: integer
-          default: ''
+          
         - name: page_size
           in: query
           description: Page size. Default/Maximum is 500.
           required: false
           type: integer
-          default: ''
+          
         - name: search_text
           in: query
           description: Filters records based on the search text.
           required: false
           type: string
-          default: ''
+          
         - name: sort_column
           in: query
           description: Column based on which we can provide the sorting. Default JOB_ID.
@@ -511,7 +511,7 @@ paths:
           description: User name.(Required)
           required: true
           type: string
-          default: ''
+          
       responses:
         '200':
           description: OK
@@ -741,19 +741,19 @@ paths:
           description: The Target Name.
           required: false
           type: string
-          default: ''
+          
         - name: organizationgroupuuid
           in: query
           description: The OrganizationGroup Identifier.
           required: false
           type: string
-          default: ''
+          
         - name: status
           in: query
           description: 'The Event Notification status [Active, Inactive].'
           required: false
           type: string
-          default: ''
+          
         - name: orderby
           in: query
           description: >-
@@ -761,25 +761,25 @@ paths:
             FormatType, UserName, Active].
           required: false
           type: string
-          default: ''
+          
         - name: sortorder
           in: query
           description: Sorting order. Values ASC or DESC. Defaults to ASC..
           required: false
           type: string
-          default: ''
+          
         - name: page
           in: query
           description: Page number.
           required: false
           type: integer
-          default: ''
+          
         - name: pagesize
           in: query
           description: Number of Records per page.
           required: false
           type: integer
-          default: ''
+          
       responses:
         '200':
           description: OK
@@ -896,19 +896,19 @@ paths:
           description: The OrganizationGroup Identifier.
           required: false
           type: string
-          default: ''
+          
         - name: page
           in: query
           description: Page number.
           required: false
           type: integer
-          default: ''
+          
         - name: pagesize
           in: query
           description: Number of Records per page.
           required: false
           type: integer
-          default: ''
+          
       responses:
         '200':
           description: OK
@@ -942,13 +942,13 @@ paths:
           description: Filter for Added and Removed Users - ('Add'/'Remove')
           required: false
           type: string
-          default: ''
+          
         - name: page
           in: query
           description: Page number to be displayed
           required: false
           type: string
-          default: ''
+          
       responses:
         '200':
           description: OK
@@ -1094,13 +1094,13 @@ paths:
           description: 'The OrganizationGroup name, such as "Global".'
           required: false
           type: string
-          default: ''
+          
         - name: type
           in: query
           description: 'The OrganizationGroup type. (eg. "Container","Customer","Partner").'
           required: false
           type: string
-          default: ''
+          
         - name: groupid
           in: query
           description: >-
@@ -1108,7 +1108,7 @@ paths:
             for.[Exact match is performed for this attribute].
           required: false
           type: string
-          default: ''
+          
         - name: orderby
           in: query
           description: >-
@@ -1116,19 +1116,19 @@ paths:
             Id/Name/GroupId/LocationGroupType].
           required: false
           type: string
-          default: ''
+          
         - name: page
           in: query
           description: Specific page number to get. 0 based index.
           required: false
           type: integer
-          default: ''
+          
         - name: pagesize
           in: query
           description: Maximum records per page. Default 500.
           required: false
           type: integer
-          default: ''
+          
         - name: sortorder
           in: query
           description: >-
@@ -1136,7 +1136,7 @@ paths:
             this attribute is not specified.
           required: false
           type: string
-          default: ''
+          
       responses:
         '200':
           description: OK
@@ -1693,19 +1693,19 @@ paths:
           description: Order the results by this attribute.
           required: false
           type: string
-          default: ''
+          
         - name: page
           in: query
           description: The specific page number to get.
           required: false
           type: integer
-          default: ''
+          
         - name: page_size
           in: query
           description: Maximum records per page.
           required: false
           type: integer
-          default: ''
+          
         - name: sort_order
           in: query
           description: >-
@@ -1719,13 +1719,13 @@ paths:
           description: Changes type. Users to be added or to be removed.
           required: false
           type: string
-          default: ''
+          
         - name: search_text
           in: query
           description: Search text.
           required: false
           type: string
-          default: ''
+          
       responses:
         '200':
           description: OK
@@ -1872,28 +1872,28 @@ paths:
           in: query
           description: Order the results by this attribute.
           required: false
-          type: ''
-          default: ''
+          type: string
+          
         - name: sort_order
           in: query
           description: >-
             Sorting order. Allowed values are ASC or DESC. Defaults to ASC if
             this attribute is not specified.
           required: false
-          type: ''
-          default: ''
+          type: string
+          default: 'ASC'
         - name: type
           in: query
           description: Changes type. Users to be added or to be removed.
           required: false
-          type: ''
-          default: ''
+          type: string
+          
         - name: search_text
           in: query
           description: Search text.
           required: false
           type: string
-          default: ''
+          
       responses:
         '202':
           description: Accepted
@@ -2462,17 +2462,12 @@ definitions:
           - 205
           - 206
           - 300
-          - 300
-          - 301
           - 301
           - 302
-          - 302
-          - 303
           - 303
           - 304
           - 305
           - 306
-          - 307
           - 307
           - 400
           - 401
@@ -4005,7 +4000,6 @@ definitions:
           - 0
           - 1
           - 2
-          - 3
           - 3
           - 4
           - 5
